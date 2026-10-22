@@ -1,18 +1,23 @@
 .container {
-  padding: 32px 40px;
-  background: linear-gradient(to right, #1c1c1c, #2a2a2a);
+  padding: 24px 40px;
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 50;
-  border-bottom: 3px solid #1a8f8a;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .container h1 {
-  color: #f0f0f0;
-  font-size: 1.7rem;
+  color: #f8fafc;
+  font-size: 1.4rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  background: linear-gradient(135deg, #ffffff 40%, #c5a059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

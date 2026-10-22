@@ -1,32 +1,40 @@
 /* ===== Selected Car Detail Panel ===== */
 .detail-section {
-  max-width: 720px;
-  margin: 32px auto;
-  padding: 32px;
-  background: #fff;
+  max-width: 860px;
+  margin: 10px auto 50px;
+  padding: 36px 40px;
+  background: #111724;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e2e2;
-  border-left: 4px solid #1a8f8a;
-  animation: fadeIn 0.35s ease-out;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-left: 4px solid #c5a059;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .detail-section h2 {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  color: #1c1c1c;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 2px solid #eee;
+  color: #f8fafc;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.02em;
 }
 
 .detail-section p {
-  color: #555;
-  line-height: 1.8;
+  color: #94a3b8;
+  line-height: 1.9;
   font-size: 0.95rem;
 }
