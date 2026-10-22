@@ -1,0 +1,193 @@
+/* ===== Search Section ===== */
+.search-section {
+  max-width: 750px;
+  margin: 28px auto;
+  padding: 24px 28px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e2e2;
+}
+
+/* ===== Search Input Bar ===== */
+.container {
+  margin: 0 auto 16px;
+  padding: 12px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  background: #f8f9fa;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.container:focus-within {
+  border-color: #1a8f8a;
+  background: #fff;
+}
+
+input {
+  all: unset;
+  font-weight: 500;
+  flex: 1;
+  font-size: 0.95rem;
+  color: #2c2c2c;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+fa-icon {
+  cursor: pointer;
+  color: #1a8f8a;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+fa-icon:hover {
+  color: #147a75;
+}
+
+label {
+  color: #1a8f8a;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ===== Filters Row ===== */
+.filters-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+select {
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  background: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #333;
+  cursor: pointer;
+  min-width: 150px;
+  transition: border-color 0.3s, background-color 0.3s;
+  appearance: auto;
+}
+
+select:hover {
+  border-color: #bbb;
+}
+
+select:focus {
+  outline: none;
+  border-color: #1a8f8a;
+  background: #fff;
+}
+
+/* ===== Car Cards Grid ===== */
+.cars-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 40px 40px;
+  gap: 28px;
+}
+
+.auto-card {
+  width: 290px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8e8e8;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.auto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #1a8f8a;
+}
+
+img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.auto-card:hover img {
+  transform: scale(1.04);
+}
+
+.details {
+  padding: 18px;
+}
+
+.details h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 0.84rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===== See More Button ===== */
+.see_more {
+  padding: 0 18px 18px;
+}
+
+button {
+  all: unset;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #1a8f8a;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1.5px solid #1a8f8a;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a8f8a;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0px);
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.empty-state p {
+  color: #999;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

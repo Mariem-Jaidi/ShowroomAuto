@@ -1,0 +1,71 @@
+<div class="search-section">
+
+    <!-- Brand search (existing) -->
+    <div class="container">
+        <label>Brand</label>
+        <input type="text" #brand name="brand"
+        (input)="selectAutos(brand.value)">
+        <fa-icon [icon]="faMagnifyingGlass" />
+    </div>
+
+    <!-- Filters row -->
+    <div class="filters-row">
+
+        <!-- Model filter dropdown -->
+        <div class="filter-group">
+            <label>Model</label>
+            <select (change)="filterByModel($any($event.target).value)">
+                <option value="">All models</option>
+                @for(model of getModels(); track model){
+                    <option [value]="model">{{model}}</option>
+                }
+            </select>
+        </div>
+
+        <!-- Power filter dropdown -->
+        <div class="filter-group">
+            <label>Power</label>
+            <select (change)="filterByPower($any($event.target).value)">
+                <option value="">All</option>
+                <option value="low">&lt; 10 CV</option>
+                <option value="mid">10 - 15 CV</option>
+                <option value="high">&gt; 15 CV</option>
+            </select>
+        </div>
+
+        <!-- Sort by price dropdown -->
+        <div class="filter-group">
+            <label>Sort by price</label>
+            <select (change)="sortCars($any($event.target).value)">
+                <option value="">Default</option>
+                <option value="price-asc">Low to High</option>
+                <option value="price-desc">High to Low</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="cars-container">
+    @for(auto of selectedAutos; track auto.id){
+        <div class="auto-card">
+            <img [src]="`images/${auto.photo}`">
+            <div class="details">
+                <h3>{{auto.brand}} {{auto.model}}</h3>
+                <p>
+                    Power : {{auto.power}} CV<br>
+                    Price : {{auto.price}} TND<br>
+                    Only {{auto.availability}} units in stock 
+                </p>
+            </div>
+            <div class="see_more">
+                <button (click)="selectCar(auto)">See More...</button>
+            </div>
+        </div>
+    } @empty {
+        <div class="empty-state">
+            <p>Search by brand to explore our collection</p>
+        </div>
+    }
+</div>
