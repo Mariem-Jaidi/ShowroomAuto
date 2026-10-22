@@ -1,0 +1,112 @@
+[
+  {
+    "id": 17,
+    "brand": "Audi",
+    "model": "A3 Sportback",
+    "price": 140,
+    "power": 8,
+    "photo": "audi-a3-sportback-35-tfsi-tech-line.png",
+    "availability": 5,
+    "description": "Audi A3 Sportback 35 TFSI Tech Line. Carrosserie : Compacte ; Energie : Essence ; Puissance (ch.din) : 150 CH ; Puissance fiscale : 8 CV ; Boîte : Automatique ; Transmission : Traction ; Nombre de places : 5 ; Garantie : 3 ans ; Consommation mixte : 5.4 L/100 km."
+  },
+  {
+    "id": 18,
+    "brand": "Audi",
+    "model": "A3 Berline",
+    "price": 150,
+    "power": 8,
+    "photo": "audi-a3-berline-35-tfsi-dynamic-edition.jpg",
+    "availability": 8,
+    "description": "Audi A3 Berline 35 TFSI Dynamic Edition. Carrosserie : Berline ; Energie : Essence ; Puissance (ch.din) : 150 CH ; Puissance fiscale : 8 CV ; Boîte : Automatique ; Transmission : Traction ; Nombre de places : 5 ; Garantie : 3 ans ; Consommation mixte : 5.4 L/100 km."
+  },
+  {
+    "id": 19,
+    "brand": "Audi",
+    "model": "Q2",
+    "price": 145,
+    "power": 8,
+    "photo": "audi-q2-35-tfsi-black-limited-bva.png",
+    "availability": 4,
+    "description": "Audi Q2 35 TFSI Black Limited BVA. Carrosserie : SUV ; Energie : Essence ; Puissance (ch.din) : 150 CH ; Puissance fiscale : 8 CV ; Boîte : Automatique ; Transmission : Traction ; Nombre de places : 5 ; Garantie : 3 ans ; Consommation mixte : 6.0 L/100 km."
+  },
+  {
+    "id": 20,
+    "brand": "Audi",
+    "model": "A5 Berline",
+    "price": 210,
+    "power": 8,
+    "photo": "audi-a5-tfsi-advanced.jpg",
+    "availability": 10,
+    "description": "Audi A5 TFSI Advanced. Carrosserie : Berline ; Energie : Essence ; Puissance (ch.din) : 150 CH ; Puissance fiscale : 8 CV ; Boîte : Automatique ; Transmission : Traction ; Nombre de places : 5 ; Garantie : 3 ans ; Consommation mixte : 7.3 L/100 km."
+  },
+  {
+    "id": 21,
+    "brand": "Audi",
+    "model": "A6 Sportback E Tron",
+    "price": 210,
+    "power": 9,
+    "photo": "audi-a6-sportback-e-tron-100-kwh-performance.jpg",
+    "availability": 10,
+    "description": "Audi A6 Sportback e-tron 100 kWh Performance. Carrosserie : Berline ; Energie : Electrique ; Puissance (ch.din) : 367 CH ; Puissance fiscale : 9 CV ; Boîte : Automatique ; Transmission : Propulsion ; Nombre de places : 5 ; Garantie : 3 ans | Batterie garantie 8 ans ou 160.000 KM."
+  },
+  {
+    "id": 22,
+    "brand": "Audi",
+    "model": "Q6 E Tron",
+    "price": 235,
+    "power": 9,
+    "photo": "audi-q6-e-tron-100-kwh-quattro-s-line.png",
+    "availability": 5,
+    "description": "Audi Q6 e-tron 100 kWh Quattro S-line. Carrosserie : SUV ; Energie : Electrique ; Puissance (ch.din) : 388 CH ; Puissance fiscale : 9 CV ; Boîte : Automatique ; Transmission : Intégrale ; Nombre de places : 5 ; Garantie : 3 ans | Batterie garantie 8 ans ou 160.000 KM."
+  },
+  {
+    "id": 23,
+    "brand": "Audi",
+    "model": "Q6 Sportback E Tron",
+    "price": 279,
+    "power": 9,
+    "photo": "audi-q6-sportback-e-tron-100-kwh-quattro-s-line.png",
+    "availability": 10,
+    "description": "Audi Q6 Sportback e-tron 100 kWh Quattro S-line. Carrosserie : SUV ; Energie : Electrique ; Puissance (ch.din) : 388 CH ; Puissance fiscale : 9 CV ; Boîte : Automatique ; Transmission : Intégrale ; Nombre de places : 5 ; Garantie : 3 ans | Batterie garantie 8 ans ou 160.000 KM."
+  },
+  {
+    "id": 24,
+    "brand": "Audi",
+    "model": "Q8",
+    "price": 525,
+    "power": 22,
+    "photo": "audi-q8-55-tfsi-quattro.jpg",
+    "availability": 10,
+    "description": "Audi Q8 55 TFSI Quattro. Carrosserie : SUV ; Energie : Essence | Hybride léger ; Puissance (ch.din) : 340 CH ; Puissance fiscale : 22 CV ; Boîte : Automatique ; Transmission : Intégrale ; Nombre de places : 5 ; Garantie : 3 ans ; Consommation mixte : 8.9 L/100 km."
+  },
+  {
+    "id": 25,
+    "brand": "JAC",
+    "model": "T8 Double Cabine",
+    "price": 88,
+    "power": 7,
+    "photo": "jac-t8-2-0-l-cti-diesel-4x2.jpg",
+    "availability": 9,
+    "description": "JAC T8 2.0 L CTI Diesel 4x2. Carrosserie : Pick up ; Energie : Diesel ; Puissance (ch.din) : 137 CH ; Puissance fiscale : 7 CV ; Boîte : Manuelle ; Transmission : Propulsion ; Nombre de places : 5 ; Garantie : 3 ans ou 100.000 km ; Consommation mixte : 7.9 L/100 km."
+  },
+  {
+    "id": 26,
+    "brand": "JAC",
+    "model": "T8 Dc",
+    "price": 105,
+    "power": 7,
+    "photo": "jac-t8-pro-2-0-l-cti-diesel-4x4-all-black.jpg",
+    "availability": 3,
+    "description": "JAC T8 Pro 2.0 L CTI Diesel 4x4 All Black. Carrosserie : Pick up ; Energie : Diesel ; Puissance (ch.din) : 137 CH ; Puissance fiscale : 7 CV ; Boîte : Manuelle ; Transmission : Intégrale ; Nombre de places : 5 ; Garantie : 3 ans ou 100.000 km ; Consommation mixte : 7.9 L/100 km."
+  },
+  {
+    "id": 27,
+    "brand": "JAC",
+    "model": "T9",
+    "price": 135,
+    "power": 9,
+    "photo": "jac-t9-2-0-l-cti-diesel-4x4-bva.jpg",
+    "availability": 10,
+    "description": "JAC T9 2.0 L CTI Diesel 4x4 BVA. Carrosserie : Pick up ; Energie : Diesel ; Puissance (ch.din) : 163 CH ; Puissance fiscale : 9 CV ; Boîte : Automatique ; Transmission : Intégrale ; Nombre de places : 5 ; Garantie : 3 ans ou 100.000 km ; Consommation mixte : 7.6 L/100 km."
+  }
+]
