@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { HeadBar } from './components/head-bar/head-bar';
 import { SearchBar } from './components/search-bar/search-bar';
@@ -9,12 +10,22 @@ import { Auto } from './interfaces/auto';
   styleUrl: './app.css',
   templateUrl: './app.html',
 }) 
-export class App {
-  protected readonly title = signal('tp2');
+export class App implements OnInit {
+  title = 'My showroom'
 
-constructor(){
-  this.title.set('My showroom');
-}
+  // Angular gives us the HttpClient tool automatically (dependency injection)
+  constructor(private http: HttpClient) {}
+
+  // runs once at startup: download the scraped cars and add them to our list
+  ngOnInit() {
+    this.http.get<Auto[]>('cars.json').subscribe({
+      next: (scrapedCars) => {
+        // new array = old 16 cars + scraped cars (a NEW array tells the child something changed)
+        this.autoList = [...this.autoList, ...scrapedCars]
+      },
+      error: (err) => console.log('cars.json not loaded, keeping the 16 default cars', err)
+    })
+  }
   selectedCar?:Auto
   selectCar(auto:Auto){
     this.selectedCar = auto

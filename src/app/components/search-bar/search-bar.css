@@ -208,3 +208,42 @@ button:active {
   font-size: 1rem;
   letter-spacing: 0.02em;
 }
+
+/* ---- added: results counter + reset button ---- */
+.results-count {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.reset-btn {
+  padding: 10px 18px;
+  font-size: 0.8rem;
+  width: auto;
+  min-width: 130px;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #cbd5e1;
+}
+
+.reset-btn:hover {
+  background-color: transparent;
+  border-color: #c5a059;
+  color: #c5a059;
+  box-shadow: none;
+}
+
+.auto-card .details p {
+  display: block;
+}
+
+.auto-card:hover h3 {
+  color: #c5a059;
+}
+
+@media (max-width: 640px) {
+  .search-section { margin: 20px 12px; padding: 18px; }
+  .cars-container { padding: 10px 12px 40px; }
+  .auto-card { width: 100%; }
+}

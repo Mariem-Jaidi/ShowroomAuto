@@ -3,8 +3,8 @@
     <!-- Brand search (existing) -->
     <div class="container">
         <label>Brand</label>
-        <input type="text" #brand name="brand"
-        (input)="selectAutos(brand.value)">
+        <input type="text" #brand name="brand" placeholder="Mercedes, Audi, BMW..."
+        (input)="selectAutos(brand.value); modelSel.value = ''">
         <fa-icon [icon]="faMagnifyingGlass" />
     </div>
 
@@ -14,7 +14,7 @@
         <!-- Model filter dropdown -->
         <div class="filter-group">
             <label>Model</label>
-            <select (change)="filterByModel($any($event.target).value)">
+            <select #modelSel (change)="filterByModel(modelSel.value)">
                 <option value="">All models</option>
                 @for(model of getModels(); track model){
                     <option [value]="model">{{model}}</option>
@@ -25,7 +25,7 @@
         <!-- Power filter dropdown -->
         <div class="filter-group">
             <label>Power</label>
-            <select (change)="filterByPower($any($event.target).value)">
+            <select #powerSel (change)="filterByPower(powerSel.value)">
                 <option value="">All</option>
                 <option value="low">&lt; 10 CV</option>
                 <option value="mid">10 - 15 CV</option>
@@ -33,19 +33,29 @@
             </select>
         </div>
 
-        <!-- Sort by price dropdown -->
+        <!-- Sort dropdown (price + power) -->
         <div class="filter-group">
-            <label>Sort by price</label>
-            <select (change)="sortCars($any($event.target).value)">
+            <label>Sort by</label>
+            <select #sortSel (change)="sortCars(sortSel.value)">
                 <option value="">Default</option>
-                <option value="price-asc">Low to High</option>
-                <option value="price-desc">High to Low</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="power-asc">Power: Low to High</option>
+                <option value="power-desc">Power: High to Low</option>
             </select>
+        </div>
+
+        <!-- Reset -->
+        <div class="filter-group">
+            <label>&nbsp;</label>
+            <button class="reset-btn" (click)="resetFilters(brand, modelSel, powerSel, sortSel)">Reset filters</button>
         </div>
 
     </div>
 
 </div>
+
+<p class="results-count">{{selectedAutos.length}} car(s) found</p>
 
 <div class="cars-container">
     @for(auto of selectedAutos; track auto.id){
@@ -65,7 +75,7 @@
         </div>
     } @empty {
         <div class="empty-state">
-            <p>Search by brand to explore our collection</p>
+            <p>No car matches your filters</p>
         </div>
     }
 </div>
